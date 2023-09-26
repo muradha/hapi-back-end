@@ -16,7 +16,6 @@ const addNoteHandler = (request, h) => {
 
   const isSuccess = notes.filter((note) => note.id === id).length > 0;
 
-
   if(isSuccess){
     const response = h.response({
       status: 'succes',
